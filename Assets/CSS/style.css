@@ -6,16 +6,15 @@
     --tom-mediano:#0D7A30;
     --tom-escuro:#063615;
     --cor-de-fundo:#EDFDF2;
-    --centralizar:translatey(-80%)
 }
 /* Reset do Navegador */
 *{
-    margin:0px;
-    padding:0px;
     border:0px;
-    box-sizing:border-box;
     font-family:"Roboto", sans-serif;
     font-weight:500;
+}
+button{
+    background-color:transparent;
 }
 a{
     text-decoration:none;
@@ -66,35 +65,44 @@ body{
         margin:0%;
     }
     .logo img{
-        width:70%;
+        transform:translatey(-15%);
     }
     .navegacao{
         width:50%;
         margin:0% 2% 0% 6%;
     }
+    .navegacao li:nth-child(1){
+        width:45%;
+    }
+    @media (min-width:1000px){
+        .navegacao li:nth-child(1){
+            width:35%;
+        }
+    }
     .navegacao li{
         display:inline-block;
-        max-width:32%;
-        font-size:1em;
-    }
-    .navegacao li:nth-child(1){
-        min-width:150px;
+        width:22%;
     }
     .navegacao li:nth-child(even){
         margin:0% 4%;
     }
     .interacao{
         width:20%;
-        text-align:right;
+        transform:translatey(-5%);
+    }
+    .interacao button{
+        width:60%;
     }
     .button{
-        padding:10% 0;
-        border-radius:15px;
+        padding:8% 0%;
+        border-radius:0.7rem;
         background-color:var(--cor-principal);
-        width:calc(100% + 30%);
+        min-width:120%;
+        max-width:130%;
         font-weight:500;
         color:#FFFBFA;
         display:inline-block;
+        font-size:0.85em;
         box-shadow:5px 5px 10px 0px rgba(0, 0, 0, 0.3);
     }
     .button:hover{
@@ -107,19 +115,23 @@ body{
         box-shadow:3px 3px 6px 0px rgba(0,0,0,0.3);
     }
     .interacao>a{
+        transform: translateY(10%);
         color:#555;
-        display:inline-block;
         font-weight:300;
+        display:inline-block;
+        min-width:38px;
         font-size:0.9em;
     }
     .interacao>a:hover{
         font-weight:400
     }
-    .interacao>a::after{
-        content:' |';
-        font-size:30px;
+    .interacao p{
+        transform: translateY(10%);
         font-weight:100;
         color:#888;
-        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+        font-size:1.8em;
+        display:inline-block;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+        cursor:default;
     }
 }
