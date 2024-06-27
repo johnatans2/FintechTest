@@ -30,38 +30,68 @@ body{
 }
 /* Header das Páginas */
 .header{
-    max-height:90px;
-    padding:30px 150px;
+    padding-top:20px;
+    display:flex;
 }
-.header>*{
-    display:inline-block;
+.navegacao, .interacao{
+    display:none;
 }
-    /* Logo */
-    .logo img{
-        width:200px;
+.saibamais{
+    width:10%;
+    padding-left:10%;
+}
+.saibamais img{
+    width:35px;
+    transform:translatey(20%);
+}
+.saibamais button{
+    cursor:pointer;
+}
+.logo{
+    width:10%;
+    margin:0px 30%;
+}
+@media (min-width:800px){
+    .header{
+        max-height:90px;
+        padding:2.5% 10% 0% 10%;
+        display:block;
     }
-    /* Navegação */
+    .header>*{
+        display:inline-block;
+    }
+    .saibamais{
+        display:none;
+    }
+    .logo{
+        width:20%;
+        margin:0%;
+    }
+    .logo img{
+        width:70%;
+    }
     .navegacao{
-        transform:var(--centralizar);
-        margin:0px 100px;
+        width:50%;
+        margin-left:8.5%;
+        transform:translatey(-30%);
     }
     .navegacao li{
         display:inline-block;
+        font-size:1em;
     }
     .navegacao li:nth-child(even){
-        margin:0 90px;
+        margin:0% 4%;
     }
-    /* Botão de Interação de Cadastro e Login */
     .interacao{
         width:20%;
         text-align:right;
-        transform:translateY(-40%);
+        transform:translateY(-20%);
     }
     .button{
         padding:16% 0;
         border-radius:15px;
         background-color:var(--cor-principal);
-        width:calc(100% + 40%);
+        width:calc(100% + 30%);
         height:40px;
         font-weight:500;
         color:#FFFBFA;
@@ -74,7 +104,7 @@ body{
     }
     .button:active{
         transform: translateY(10%);
-        transition:0.2s;
+        transition:0.1s;
         box-shadow:3px 3px 6px 0px rgba(0,0,0,0.3);
     }
     .interacao>a{
@@ -93,3 +123,4 @@ body{
         color:#888;
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
     }
+}
