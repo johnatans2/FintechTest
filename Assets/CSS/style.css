@@ -42,7 +42,6 @@ body{
 }
 .saibamais img{
     width:35px;
-    transform:translatey(20%);
 }
 .saibamais button{
     cursor:pointer;
@@ -54,7 +53,6 @@ body{
 @media (min-width:800px){
     .header{
         max-height:90px;
-        padding:2.5% 10% 0% 10%;
         display:block;
     }
     .header>*{
@@ -72,12 +70,15 @@ body{
     }
     .navegacao{
         width:50%;
-        margin-left:8.5%;
-        transform:translatey(-30%);
+        margin:0% 2% 0% 6%;
     }
     .navegacao li{
         display:inline-block;
+        max-width:32%;
         font-size:1em;
+    }
+    .navegacao li:nth-child(1){
+        min-width:150px;
     }
     .navegacao li:nth-child(even){
         margin:0% 4%;
@@ -85,14 +86,12 @@ body{
     .interacao{
         width:20%;
         text-align:right;
-        transform:translateY(-20%);
     }
     .button{
-        padding:16% 0;
+        padding:10% 0;
         border-radius:15px;
         background-color:var(--cor-principal);
         width:calc(100% + 30%);
-        height:40px;
         font-weight:500;
         color:#FFFBFA;
         display:inline-block;
@@ -110,8 +109,8 @@ body{
     .interacao>a{
         color:#555;
         display:inline-block;
-        transform: translateY(10%);
         font-weight:300;
+        font-size:0.9em;
     }
     .interacao>a:hover{
         font-weight:400
