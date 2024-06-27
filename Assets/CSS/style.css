@@ -16,6 +16,12 @@
 button{
     background-color:transparent;
 }
+strong{
+    color:var(--cor-principal)
+}
+pre{
+    width:100%;
+}
 a{
     text-decoration:none;
     color:var(--tom-mediano);
@@ -25,7 +31,8 @@ a:hover{
     font-weight:700;
 }
 body{
-    background-color:var(--cor-de-fundo)
+    background-color:var(--cor-de-fundo);
+    height:110vh
 }
 /* Header das Páginas */
 .header{
@@ -95,15 +102,19 @@ body{
     }
     .button{
         padding:8% 0%;
-        border-radius:0.7rem;
+        border-radius:0.8em;
         background-color:var(--cor-principal);
-        min-width:120%;
-        max-width:130%;
+        width:130%;
         font-weight:500;
         color:#FFFBFA;
         display:inline-block;
         font-size:0.85em;
         box-shadow:5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    @media (min-width:1200px){
+        .button{
+            width:110%;
+        }
     }
     .button:hover{
         background-color:var(--tom-mediano);

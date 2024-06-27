@@ -1,0 +1,87 @@
+.calltoaction{
+    margin-top:15vh;
+}
+.calltoaction h2{
+    width:88vw;
+    font-size:2.5rem;
+    color:#222;
+}
+.calltoaction p{
+    margin-top:5vh;
+    font-size:1.3rem;
+    color:var(--tom-escuro);
+}
+.calltoaction button{
+    display:block;
+    margin:10vh 0vw 0vh 5vw;
+    font-size:1.1rem;
+}
+.calltoaction a{
+    width:130%;
+    padding:5% 2%;
+    background-color:var(--cor-principal);
+    color:var(--tom-escuro);
+    display:inline-block;
+    border-radius:5px;
+    box-shadow:3px 6px 4px 0px rgba(0, 0, 0, 0.25)
+}
+.calltoaction a::after{
+    content:url('../Imagens/Arrow.png');
+    margin-left:10px;
+    display:inline-block;
+    transform:translateY(20%);
+}
+.calltoaction a:hover{
+    background-color:var(--tom-mediano);
+    color:var(--cor-principal);
+}
+.calltoaction a:hover::after{
+    content:url('../Imagens/Arrow1.png');
+    transition:0.5s;
+    transform:translate(20%, 20%);
+}
+.calltoaction a:active{
+    transform:translatey(10%);
+    box-shadow:2px 3px 4px 0px rgba(0,0,0,0.25);
+}
+@media (min-width:640px){
+    .calltoaction h2{
+        width:65vw;
+        font-size:3rem;
+    }
+    .calltoaction p{
+        width:60vw;
+        font-size:2rem;
+    }
+    .main{
+        background-image:url('../Imagens/Sifrao.png');
+        background-repeat:no-repeat;
+        background-position:100%;
+    }
+}
+@media (min-width:770px){
+    .main{
+        margin-right:0px;
+        background-image:url('../Imagens/Sifrao.png'),url('../Imagens/Sifrao.png');
+        background-repeat:no-repeat;
+        background-position:80% 90%,95% 0%;
+    }
+    .calltoaction h2{
+        width:50vw;
+    }
+    .calltoaction p{
+        width:50vw;
+    }
+}
+@media (min-width:1090px){
+    .calltoaction p{
+        width:40vw;
+    }
+    .main{
+        margin-right:0px;
+        background-image:url('../Imagens/Sifrao.png'),url('../Imagens/Sifrao.png'),url('../Imagens/Mao.png');
+        background-repeat:no-repeat;
+        background-position:58% 90%,70% 0%,100% 0%;
+        background-size:auto,auto,contain;
+    }
+}
