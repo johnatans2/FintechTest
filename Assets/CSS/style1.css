@@ -15,16 +15,16 @@
     box-sizing:border-box;
 }
 .container{
-    height:50vh;
-    background-color:#ccc;
-    display:flex;
-    justify-content:space-evenly;
+    height:100vh;
+    display:grid;
     gap:2px;
-    flex-wrap:wrap;
-
+    grid-template-columns:3fr 1fr;
+    grid-template-rows:repeat(30vh);
 }
 .box{
     background-color:red;
-    height:100px;
-    flex-grow:2;
+}
+.box:first-child{
+    grid-column-start:1;
+    grid-column-end:3;
 }
